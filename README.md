@@ -1,5 +1,5 @@
-<h1 align="center">@nevware21 ts-debug</h1>
-<h2 align="center">Promise support implementations and helpers for TypeScript built for minification</h2>
+<h1 align="center">@nevware21 / ts-debug</h1>
+<h2 align="center">Provides helper functions to support adding configurable debugging logging and support to your application or libraries.</h2>
 
 ![GitHub Workflow Status (main)](https://img.shields.io/github/actions/workflow/status/nevware21/ts-debug/ci.yml?branch=main)
 [![codecov](https://codecov.io/gh/nevware21/ts-debug/branch/main/graph/badge.svg?token=KA05820FMO)](https://codecov.io/gh/nevware21/ts-debug)
