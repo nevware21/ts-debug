@@ -1,0 +1,91 @@
+{
+    "name": "@nevware21/ts-debug",
+    "description": "Provides helper functions to support adding configurable debugging logging and support to your application or libraries.",
+    "version": "0.1.0",
+    "homepage": "https://github.com/nevware21/ts-debug",
+    "sideEffects": false,
+    "license": "MIT",
+    "author": {
+        "name": "Nevware21",
+        "email": "github+ts_debug@nevware21.com"
+    },
+    "keywords": [
+        "typescript",
+        "javascript",
+        "es5",
+        "es6",
+        "debug"
+    ],
+    "main": "lib/dist/es5/umd/ts-debug.js",
+    "module": "lib/dist-es5/index.js",
+    "esnext": "lib/dist-es6/index.js",
+    "types": "lib/types/index.d.ts",    
+    "scripts": {
+        "postinstall": "node common/scripts/install-run-rush.js update",
+        "build": "rush build",
+        "rebuild": "rush rebuild",
+        "test": "rush test",
+        "lint": "grunt ts_debug-lint",
+        "coverage:report": "npm run coverage:nyc && npm run coverage:merge",
+        "coverage:nyc": "nyc report --reporter=json",
+        "coverage:merge": "node tools/coverage/merge-coverage.js",
+        "codecov": "npm run coverage:report && codecov -f coverage/*.json --disable=gcov",
+        "clean": "git clean -xdf && npm install",
+        "cleanBuild": "npm run clean && npm run rebuild && npm run docs",
+        "docs": "typedoc",
+        "rush-update": "rush update --recheck --purge --full",
+        "test:browser": "cd lib && npm run test:browser",
+        "test:node": "cd lib && npm run test:node",
+        "test:worker": "cd lib && npm run test:worker",
+        "debug:browser": "cd lib && npm run debug:browser",
+        "debug:worker": "cd lib && npm run debug:worker",
+        "prep_release": "npm run cleanBuild && npm run npm_pack",
+        "npm_pack": "copyfiles README.md LICENSE lib && cd lib && npm pack"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nevware21/ts-debug.git"
+    },
+    "bugs": {
+        "url": "https://github.com/nevware21/ts-debug/issues"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/nevware21/ts-debug/blob/main/LICENSE"
+        }
+    ],
+    "engines": {
+        "node": ">= 0.8.0"
+    },
+    "dependencies": {
+        "@nevware21/ts-utils": ">= 0.9.0 < 2.x"
+    },
+    "peerDependencies": {
+        "typescript": ">=1"
+    },
+    "devDependencies": {
+        "@istanbuljs/nyc-config-typescript": "^1.0.2",
+        "@microsoft/rush": "5.93.1",
+        "@nevware21/grunt-eslint-ts": "0.2.4",
+        "@nevware21/grunt-ts-plugin": "0.4.5",
+        "@types/eslint": "^8.4.2",
+        "@types/estree": "^1.0.0",
+        "@types/jquery": "^3.5.14",
+        "@types/chai": "^4.3.1",
+        "@types/mocha": "^10.0.1",
+        "@types/sinon": "^10.0.11",
+        "@typescript-eslint/eslint-plugin": "^5.26.0",
+        "@typescript-eslint/parser": "^5.26.0",
+        "eslint": "^8.16.0",
+        "eslint-plugin-security": "^1.5.0",
+        "eslint-formatter-codeframe": "^7.32.1",
+        "grunt": "^1.5.3",
+        "grunt-cli": "^1.4.3",
+        "typescript": "^4.9.3",
+        "nyc": "^15.1.0",
+        "codecov": "^3.8.3",
+        "typedoc": "^0.23.23",
+        "copyfiles": "^2.4.1"
+    }
+}
