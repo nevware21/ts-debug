@@ -10,8 +10,8 @@
     "include": [ "lib/src/**/*.ts" ],
     "exclude": [ 
         "**/src/index.ts", 
-        "**/src/polyfills.ts", 
         "**/karma*.conf.js" 
     ],
-    "report-dir": "./coverage/nyc"
+    "report-dir": "./coverage/nyc",
+    "useSpawnWrap": false
 }
