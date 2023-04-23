@@ -20,7 +20,9 @@ primary focuses of this package is to provide support for the creation of code t
 
 ### Documentation and details
 
-See the documentation [generated from source code](https://nevware21.github.io/ts-debug/typedoc/index.html) via typedoc for a full list and details of all of the available types, functions, interfaces with included examples.
+See the documentation generated from source code via typedoc for a full list and details of all of the available types, functions, interfaces with included examples.
+- [Main base dbg library](https://nevware21.github.io/ts-debug/typedoc/dbg/index.html)
+- [Provider library](https://nevware21.github.io/ts-debug/typedoc/providers/index.html)
 
 See [Browser Support](#browser-support) for details on the supported browser environments.
 
