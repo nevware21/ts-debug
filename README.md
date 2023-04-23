@@ -5,7 +5,7 @@
 [![codecov](https://codecov.io/gh/nevware21/ts-debug/branch/main/graph/badge.svg?token=KA05820FMO)](https://codecov.io/gh/nevware21/ts-debug)
 [![npm version](https://badge.fury.io/js/%40nevware21%2Fts-debug.svg)](https://badge.fury.io/js/%40nevware21%2Fts-debug)
 [![downloads](https://img.shields.io/npm/dt/%40nevware21/ts-debug.svg)](https://www.npmjs.com/package/%40nevware21/ts-debug)
-[![downloads](https://img.shields.io/npm/dm/%40nevware21/ts-debug.svg)](https://www.npmjs.com/package/%40nevware21/ts-debug)
+[![downloads](https://img.shields.io/npm/dm/%40nevware21/ts-debug-providers.svg)](https://www.npmjs.com/package/%40nevware21/ts-debug-providers)
 
 ## Description
 

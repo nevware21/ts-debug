@@ -10,22 +10,6 @@
 *.userosscache
 *.sln.docstates
 
-# Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-[Aa][Rr][Mm]/
-[Aa][Rr][Mm]64/
-bld/
-[Bb]in/
-[Oo]bj/
-[Ll]og/
-[Ll]ogs/
-
-
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
@@ -110,6 +94,10 @@ package-lock.json
 **/.nyc_output/**
 
 
-#ignore lib Readme
-lib/README.md
-lib/LICENSE
+#ignore dbg Readme
+dbg/README.md
+dbg/LICENSE
+
+#ignore dbg Readme
+providers/README.md
+providers/LICENSE

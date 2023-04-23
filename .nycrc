@@ -7,7 +7,7 @@
     "all": true,
     "check-coverage": false,
     "reporter": [ "text", "html" ],
-    "include": [ "lib/src/**/*.ts" ],
+    "include": [ "dbg/src/**/*.ts" ],
     "exclude": [ 
         "**/src/index.ts", 
         "**/karma*.conf.js" 
