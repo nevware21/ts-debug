@@ -16,4 +16,6 @@ primary focuses of this package is to provide support for the creation of code t
 
 ## Documentation
 
-Documentation [generated from source code](https://nevware21.github.io/ts-debug/typedoc/index.html) via typedoc
+Documentation generated from source code via typedoc
+- [Main base dbg library](https://nevware21.github.io/ts-debug/typedoc/dbg/index.html)
+- [Provider library](https://nevware21.github.io/ts-debug/typedoc/providers/index.html)
