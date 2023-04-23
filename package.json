@@ -16,31 +16,30 @@
         "es6",
         "debug"
     ],
-    "main": "lib/dist/es5/umd/ts-debug.js",
-    "module": "lib/dist-es5/index.js",
-    "esnext": "lib/dist-es6/index.js",
-    "types": "lib/types/index.d.ts",    
+    "main": "dbg/dist/es5/umd/ts-debug.js",
+    "module": "dbg/dist-es5/index.js",
+    "esnext": "dbg/dist-es6/index.js",
+    "types": "dbg/types/index.d.ts",    
     "scripts": {
         "postinstall": "node common/scripts/install-run-rush.js update",
         "build": "rush build",
         "rebuild": "rush rebuild",
         "test": "rush test",
         "lint": "grunt ts_debug-lint",
-        "coverage:report": "npm run coverage:nyc && npm run coverage:merge",
-        "coverage:nyc": "nyc report --reporter=json",
-        "coverage:merge": "node tools/coverage/merge-coverage.js",
-        "codecov": "npm run coverage:report && codecov -f coverage/*.json --disable=gcov",
+        "coverage:report": "rush coverage:report",
+        "coverage:merge": "rush coverage:merge",
+        "codecov": "rush codecov",
         "clean": "git clean -xdf && npm install",
         "cleanBuild": "npm run clean && npm run rebuild && npm run docs",
-        "docs": "typedoc",
+        "docs": "rush docs",
         "rush-update": "rush update --recheck --purge --full",
-        "test:browser": "cd lib && npm run test:browser",
-        "test:node": "cd lib && npm run test:node",
-        "test:worker": "cd lib && npm run test:worker",
-        "debug:browser": "cd lib && npm run debug:browser",
-        "debug:worker": "cd lib && npm run debug:worker",
+        "test:browser": "rush test:browser",
+        "test:node": "rush test:node",
+        "test:worker": "rush test:worker",
+        "debug:browser": "cd dbg && npm run debug:browser",
+        "debug:worker": "cd dbg && npm run debug:worker",
         "prep_release": "npm run cleanBuild && npm run npm_pack",
-        "npm_pack": "copyfiles README.md LICENSE lib && cd lib && npm pack"
+        "npm-pack": "copyfiles README.md LICENSE dbg && copyfiles README.md LICENSE providers && rush npm-pack"
     },
     "repository": {
         "type": "git",
@@ -59,14 +58,14 @@
         "node": ">= 0.8.0"
     },
     "dependencies": {
-        "@nevware21/ts-utils": ">= 0.9.0 < 2.x"
+        "@nevware21/ts-utils": ">= 0.9.4 < 2.x"
     },
     "peerDependencies": {
         "typescript": ">=1"
     },
     "devDependencies": {
         "@istanbuljs/nyc-config-typescript": "^1.0.2",
-        "@microsoft/rush": "5.97.0",
+        "@microsoft/rush": "5.97.1",
         "@nevware21/grunt-eslint-ts": "0.2.4",
         "@nevware21/grunt-ts-plugin": "0.4.5",
         "@types/eslint": "^8.4.2",

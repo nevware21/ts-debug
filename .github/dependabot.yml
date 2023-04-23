@@ -11,6 +11,11 @@ updates:
       interval: "daily"
 
   - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/lib" # Location of package manifests
+    directory: "/dbg" # Location of package manifests
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "npm" # See documentation for possible values
+    directory: "/providers" # Location of package manifests
     schedule:
       interval: "daily"

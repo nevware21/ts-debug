@@ -41,6 +41,46 @@
             "enableParallelism": false,
             "ignoreMissingScript": false,
             "allowWarningsInSuccessfulBuild": true
-        }  
+        },
+        {
+            "commandKind": "bulk",
+            "summary": "Run all npm-pack targets for all packages",
+            "name": "npm-pack",
+            "description": "Runs npm-pack for all projects",
+            "safeForSimultaneousRushProcesses": false,
+            "enableParallelism": false,
+            "ignoreMissingScript": false,
+            "allowWarningsInSuccessfulBuild": true
+        },
+        {
+            "commandKind": "bulk",
+            "summary": "Run all coverage:report targets for all packages",
+            "name": "coverage:report",
+            "description": "Runs coverage:report for all projects",
+            "safeForSimultaneousRushProcesses": false,
+            "enableParallelism": false,
+            "ignoreMissingScript": false,
+            "allowWarningsInSuccessfulBuild": true
+        },
+        {
+            "commandKind": "bulk",
+            "summary": "Run all coverage:merge targets for all packages",
+            "name": "coverage:merge",
+            "description": "Runs coverage:merge for all projects",
+            "safeForSimultaneousRushProcesses": false,
+            "enableParallelism": false,
+            "ignoreMissingScript": false,
+            "allowWarningsInSuccessfulBuild": true
+        },
+        {
+            "commandKind": "bulk",
+            "summary": "Run all codecov targets for all packages",
+            "name": "codecov",
+            "description": "Runs codecov for all projects",
+            "safeForSimultaneousRushProcesses": false,
+            "enableParallelism": false,
+            "ignoreMissingScript": false,
+            "allowWarningsInSuccessfulBuild": true
+        }
     ]
 }

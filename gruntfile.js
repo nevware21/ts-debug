@@ -38,16 +38,29 @@ module.exports = function (grunt) {
             },
             "ts_debug": {
                 // Default ES5
-                tsconfig: "./lib/tsconfig.json",
-                outDir: "./lib/build/es5"
+                tsconfig: "./dbg/tsconfig.json",
+                outDir: "./dbg/dist-es5"
             },
             "ts_debug_es6": {
-                tsconfig: "./lib/tsconfig.es6.json",
-                outDir: "./lib/build/es6"
+                tsconfig: "./dbg/tsconfig.es6.json",
+                outDir: "./dbg/dist-es6"
             },
             "ts_debug-test": {
-                tsconfig: "./lib/test/tsconfig.test.json",
-                outDir: "./lib/test-esm"
+                tsconfig: "./dbg/test/tsconfig.test.json",
+                outDir: "./dbg/test-esm"
+            },
+            "ts_debug_providers": {
+                // Default ES5
+                tsconfig: "./providers/tsconfig.json",
+                outDir: "./providers/dist-es5"
+            },
+            "ts_debug_providers_es6": {
+                tsconfig: "./providers/tsconfig.es6.json",
+                outDir: "./providers/dist-es6"
+            },
+            "ts_debug_providers-test": {
+                tsconfig: "./providers/test/tsconfig.test.json",
+                outDir: "./providers/test-esm"
             }
         },
         "lint": {
@@ -56,22 +69,42 @@ module.exports = function (grunt) {
                 suppressWarnings: false
             },
             "ts_debug": {
-                tsconfig: "./lib/tsconfig.json",
+                tsconfig: "./dbg/tsconfig.json",
                 ignoreFailures: true
             },
             "ts_debug-test": {
-                tsconfig: "./lib/test/tsconfig.test.json",
+                tsconfig: "./dbg/test/tsconfig.test.json",
                 ignoreFailures: true
             },
             "ts_debug-fix": {
                 options: {
-                    tsconfig: "./lib/tsconfig.json",
+                    tsconfig: "./dbg/tsconfig.json",
                     fix: true
                 }
             },
             "ts_debug-test-fix": {
                 options: {
-                    tsconfig: "./lib/test/tsconfig.test.json",
+                    tsconfig: "./dbg/test/tsconfig.test.json",
+                    fix: true
+                }
+            },
+            "ts_debug_providers": {
+                tsconfig: "./providers/tsconfig.json",
+                ignoreFailures: true
+            },
+            "ts_debug_providers-test": {
+                tsconfig: "./providers/test/tsconfig.test.json",
+                ignoreFailures: true
+            },
+            "ts_debug_providers-fix": {
+                options: {
+                    tsconfig: "./providers/tsconfig.json",
+                    fix: true
+                }
+            },
+            "ts_debug_providers-test-fix": {
+                options: {
+                    tsconfig: "./providers/test/tsconfig.test.json",
                     fix: true
                 }
             }
@@ -87,7 +120,11 @@ module.exports = function (grunt) {
     grunt.registerTask("ts_debug-test", [ "lint:ts_debug-test-fix", "ts:ts_debug-test" ]);
     grunt.registerTask("ts_debug-lint", [ "lint:ts_debug-fix", "lint:ts_debug-test-fix" ]);
     grunt.registerTask("dolint", [ "lint:ts_debug", "lint:ts_debug-test" ]);
-    grunt.registerTask("lint-fix", [ "lint:ts_debug-fix", "lint:ts_debug-test-fix" ]);
+    grunt.registerTask("ts_debug_providers", [ "lint:ts_debug_providers-fix", "lint:ts_debug_providers-test-fix", "ts:ts_debug_providers", "ts:ts_debug_providers_es6", "ts:ts_debug_providers-test" ]);
+    grunt.registerTask("ts_debug_providers-test", [ "lint:ts_debug_providers-test-fix", "ts:ts_debug_providers-test" ]);
+    grunt.registerTask("ts_debug_providers-lint", [ "lint:ts_debug_providers-fix", "lint:ts_debug_providers-test-fix" ]);
+    grunt.registerTask("dolint", [ "lint:ts_debug", "lint:ts_debug-test", "lint:ts_debug_providers", "lint:ts_debug_providers-test" ]);
+    grunt.registerTask("lint-fix", [ "lint:ts_debug-fix", "lint:ts_debug-test-fix", "lint:ts_debug_providers-fix", "lint:ts_debug_providers-test-fix" ]);
 
     // By default, lint and run all tests.
     grunt.registerTask("default", ["jshint" ]);
