@@ -38,7 +38,7 @@
         "test:worker": "rush test:worker",
         "debug:browser": "cd dbg && npm run debug:browser",
         "debug:worker": "cd dbg && npm run debug:worker",
-        "prep_release": "npm run cleanBuild && npm run npm_pack",
+        "prep_release": "npm run cleanBuild && npm run npm-pack",
         "npm-pack": "copyfiles README.md LICENSE dbg && copyfiles README.md LICENSE providers && rush npm-pack"
     },
     "repository": {
