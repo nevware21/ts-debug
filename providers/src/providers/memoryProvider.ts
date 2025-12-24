@@ -34,8 +34,8 @@ import { addGetLogsCmd } from "../cmds/getLogsCmd";
  * $dbgError("Error Message"); // "Error Message" as an error on the console
  * ```
  */
-export function createMemoryProvider(_config?: IDbgMemoryProviderConfig): IDbgMemoryProvider {
-    let cfg = _config || {} as IDbgMemoryProviderConfig;
+export function createMemoryProvider(config?: IDbgMemoryProviderConfig): IDbgMemoryProvider {
+    let cfg = config || {} as IDbgMemoryProviderConfig;
     let maxLevel = isUndefined(cfg.lvl) ? DbgLevel.Error : cfg.lvl;
     let maxCount = isUndefined(cfg.count) ? 50 : cfg.count;
     let entries: IDbgMemoryLog[] = [];

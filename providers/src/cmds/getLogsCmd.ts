@@ -10,6 +10,7 @@
 import { arrAppend, isArray } from "@nevware21/ts-utils";
 import { IDbg, IDbgCmdContext } from "@nevware21/ts-debug";
 import { IDbgMemoryLog } from "../interfaces/IDbgMemoryLog";
+import { IDbgMemoryProvider } from "../interfaces/IDbgMemoryProvider";
 
 const GET_LOGS = "getLogs";
 
@@ -26,7 +27,7 @@ export const addGetLogsCmd = (dbg: IDbg) => {
             let dbg = context.dbg;
             let entries: IDbgMemoryLog[] = [];
     
-            dbg.each((provider) => {
+            dbg.each((provider: IDbgMemoryProvider) => {
                 if (provider[GET_LOGS]) {
                     let theLogs = provider[GET_LOGS]();
                     if (isArray(theLogs)) {

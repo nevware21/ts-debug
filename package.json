@@ -28,7 +28,6 @@
         "lint": "grunt ts_debug-lint",
         "coverage:report": "rush coverage:report",
         "coverage:merge": "rush coverage:merge",
-        "codecov": "rush codecov",
         "clean": "git clean -xdf && npm install",
         "cleanBuild": "npm run clean && npm run rebuild && npm run docs",
         "docs": "rush docs",
@@ -40,7 +39,7 @@
         "debug:worker": "cd dbg && npm run debug:worker",
         "prep-release": "npm run cleanBuild && npm run npm-pack",
         "npm-pack": "copyfiles README.md LICENSE dbg && copyfiles README.md LICENSE providers && rush npm-pack",
-        "npm-publish": "cd tools/release-tools/npm-publish && npm install && cd ../../.. && npm run do-npm-publish --prefix tools/release-tools/npm-publish --"
+        "npm-publish": "publish-npm"
     },
     "repository": {
         "type": "git",
@@ -66,13 +65,15 @@
     },
     "devDependencies": {
         "@istanbuljs/nyc-config-typescript": "^1.0.2",
-        "@microsoft/rush": "5.109.2",
+        "@microsoft/rush": "5.163.0",
         "@nevware21/grunt-eslint-ts": "0.2.4",
         "@nevware21/grunt-ts-plugin": "0.4.5",
+        "@nevware21/coverage-tools": "^0.1.3",
+        "@nevware21/publish-npm": "^0.1.3",
         "@types/eslint": "^8.4.2",
         "@types/estree": "^1.0.0",
         "@types/jquery": "^3.5.14",
-        "@types/chai": "^4.3.1",
+        "@types/node": "^24.10.1",
         "@types/mocha": "^10.0.1",
         "@types/sinon": "^10.0.11",
         "@typescript-eslint/eslint-plugin": "^5.26.0",
@@ -82,10 +83,11 @@
         "eslint-formatter-codeframe": "^7.32.1",
         "grunt": "^1.5.3",
         "grunt-cli": "^1.4.3",
-        "typescript": "^4.9.5",
+        "typedoc": "^0.28.15",
+        "typedoc-github-theme": "^0.3.0",
+        "typescript": "~5.2.2",
         "nyc": "^15.1.0",
         "codecov": "^3.8.3",
-        "typedoc": "^0.25.1",
         "copyfiles": "^2.4.1"
     }
 }

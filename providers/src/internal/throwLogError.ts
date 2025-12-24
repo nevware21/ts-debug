@@ -18,6 +18,7 @@ export interface DbgLogError extends CustomErrorConstructor {
 
     readonly type: string;
     readonly component: string;
+    readonly message: string;
 }
 
 /**
