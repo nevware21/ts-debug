@@ -5,17 +5,100 @@
 
 version: 2
 updates:
+  - package-ecosystem: "github-actions" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "weekly"
+
   - package-ecosystem: "npm" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
+    open-pull-requests-limit: 5
+    groups:
+      nevware21:
+        patterns:
+          - "@nevware21/*"
+      types:
+        patterns:
+          - "@types/*"
+      grunt:
+        patterns:
+          - "grunt*"
+      puppeteer:
+        patterns:
+          - "puppeteer"
+      rollup:
+        patterns:
+          - "rollup*"
+          - "@rollup/*"
+      typescript:
+        patterns:
+          - "typescript*"
+          - "typedoc"
+          - "karma-typescript"
+          - "nyc"
+          - "@istanbuljs/nyc-config-typescript"
+          - "*mocha*"
 
   - package-ecosystem: "npm" # See documentation for possible values
     directory: "/dbg" # Location of package manifests
     schedule:
       interval: "daily"
+    open-pull-requests-limit: 5
+    groups:
+      nevware21:
+        patterns:
+          - "@nevware21/*"
+      types:
+        patterns:
+          - "@types/*"
+      grunt:
+        patterns:
+          - "grunt*"
+      puppeteer:
+        patterns:
+          - "puppeteer"
+      rollup:
+        patterns:
+          - "rollup*"
+          - "@rollup/*"
+      typescript:
+        patterns:
+          - "typescript*"
+          - "typedoc"
+          - "karma-typescript"
+          - "nyc"
+          - "@istanbuljs/nyc-config-typescript"
+          - "*mocha*"
 
   - package-ecosystem: "npm" # See documentation for possible values
     directory: "/providers" # Location of package manifests
     schedule:
       interval: "daily"
+    open-pull-requests-limit: 5
+    groups:
+      nevware21:
+        patterns:
+          - "@nevware21/*"
+      types:
+        patterns:
+          - "@types/*"
+      grunt:
+        patterns:
+          - "grunt*"
+      puppeteer:
+        patterns:
+          - "puppeteer"
+      rollup:
+        patterns:
+          - "rollup*"
+          - "@rollup/*"
+      typescript:
+        patterns:
+          - "typescript*"
+          - "typedoc"
+          - "karma-typescript"
+          - "nyc"
+          - "@istanbuljs/nyc-config-typescript"
+          - "*mocha*"
