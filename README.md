@@ -14,7 +14,7 @@ to your application or libraries. The support is all built and tested using Type
 primary focuses of this package is to provide support for the creation of code that can be better minified, resulting in a smaller runtime payload which can directly assist with Page Load performance.
 
 ### Test Environments 
-- Node (12, 14, 16, 18)
+- Node (16, 18, 20, 22)
 - Browser (Chromium - headless)
 - Web Worker (Chromium - headless)
 

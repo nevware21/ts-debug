@@ -7,7 +7,7 @@
  */
 
 import { arrForEach } from "@nevware21/ts-utils";
-import { assert } from "chai";
+import { assert } from "@nevware21/tripwire";
 import { EMPTY } from "../../../src/internal/constants";
 import { DbgLogError, throwLogError } from "../../../src/internal/throwLogError";
 

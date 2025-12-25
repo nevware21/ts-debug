@@ -7,7 +7,7 @@
  */
 
 import { objKeys } from "@nevware21/ts-utils";
-import { assert } from "chai";
+import { assert } from "@nevware21/tripwire";
 import { _createUsrCtx } from "../../../src/internal/usrCtx";
 
 describe("usrCtx", () => {

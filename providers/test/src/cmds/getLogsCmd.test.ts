@@ -6,7 +6,7 @@
  * Licensed under the MIT license.
  */
 
-import { assert } from "chai";
+import { assert } from "@nevware21/tripwire";
 import { DbgLevel, IDbg, IDbgLogCtx, createDbg } from "@nevware21/ts-debug";
 import { createConsoleProvider } from "../../../src/providers/consoleProvider";
 import { createMemoryProvider } from "../../../src/providers/memoryProvider";

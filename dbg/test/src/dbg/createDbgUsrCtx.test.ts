@@ -6,7 +6,7 @@
  * Licensed under the MIT license.
  */
 
-import { assert } from "chai";
+import { assert } from "@nevware21/tripwire";
 import { createDbg } from "../../../src/dbg/createDbg";
 
 describe("createDbg user context", () => {

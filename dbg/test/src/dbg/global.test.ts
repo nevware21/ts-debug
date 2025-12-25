@@ -6,7 +6,7 @@
  * Licensed under the MIT license.
  */
 
-import { assert } from "chai";
+import { assert } from "@nevware21/tripwire";
 import { eDbgLevel } from "../../../src/dbg/dbgLevel";
 import { $Dbg } from "../../../src/dbg/global";
 import { IDbgLogCtx } from "../../../src/interfaces/log/IDbgLogCtx";
@@ -28,7 +28,7 @@ describe("dbgProvider", () => {
     });
 
     it("Check log with provider", () => {
-        let results = {};
+        let results: any = {};
         let ctx = $Dbg.addProvider({
             log: (ctx: IDbgLogCtx, message: string, data?: any) => {
                 results[ctx.lvl] = {
