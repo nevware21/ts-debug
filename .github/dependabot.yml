@@ -4,34 +4,6 @@
 # https://help.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 
 version: 2
-
-# Define reusable npm dependency groups using YAML anchors
-x-npm-groups: &npm-groups
-  nevware21:
-    patterns:
-      - "@nevware21/*"
-  types:
-    patterns:
-      - "@types/*"
-  grunt:
-    patterns:
-      - "grunt*"
-  puppeteer:
-    patterns:
-      - "puppeteer"
-  rollup:
-    patterns:
-      - "rollup*"
-      - "@rollup/*"
-  typescript:
-    patterns:
-      - "typescript*"
-      - "typedoc"
-      - "karma-typescript"
-      - "nyc"
-      - "@istanbuljs/nyc-config-typescript"
-      - "*mocha*"
-
 updates:
   - package-ecosystem: "github-actions" # See documentation for possible values
     directory: "/" # Location of package manifests
@@ -43,18 +15,90 @@ updates:
     schedule:
       interval: "daily"
     open-pull-requests-limit: 5
-    groups: *npm-groups
+    groups:
+      nevware21:
+        patterns:
+          - "@nevware21/*"
+      types:
+        patterns:
+          - "@types/*"
+      grunt:
+        patterns:
+          - "grunt*"
+      puppeteer:
+        patterns:
+          - "puppeteer"
+      rollup:
+        patterns:
+          - "rollup*"
+          - "@rollup/*"
+      typescript:
+        patterns:
+          - "typescript*"
+          - "typedoc"
+          - "karma-typescript"
+          - "nyc"
+          - "@istanbuljs/nyc-config-typescript"
+          - "*mocha*"
 
   - package-ecosystem: "npm" # See documentation for possible values
     directory: "/dbg" # Location of package manifests
     schedule:
       interval: "daily"
     open-pull-requests-limit: 5
-    groups: *npm-groups
+    groups:
+      nevware21:
+        patterns:
+          - "@nevware21/*"
+      types:
+        patterns:
+          - "@types/*"
+      grunt:
+        patterns:
+          - "grunt*"
+      puppeteer:
+        patterns:
+          - "puppeteer"
+      rollup:
+        patterns:
+          - "rollup*"
+          - "@rollup/*"
+      typescript:
+        patterns:
+          - "typescript*"
+          - "typedoc"
+          - "karma-typescript"
+          - "nyc"
+          - "@istanbuljs/nyc-config-typescript"
+          - "*mocha*"
 
   - package-ecosystem: "npm" # See documentation for possible values
     directory: "/providers" # Location of package manifests
     schedule:
       interval: "daily"
     open-pull-requests-limit: 5
-    groups: *npm-groups
+    groups:
+      nevware21:
+        patterns:
+          - "@nevware21/*"
+      types:
+        patterns:
+          - "@types/*"
+      grunt:
+        patterns:
+          - "grunt*"
+      puppeteer:
+        patterns:
+          - "puppeteer"
+      rollup:
+        patterns:
+          - "rollup*"
+          - "@rollup/*"
+      typescript:
+        patterns:
+          - "typescript*"
+          - "typedoc"
+          - "karma-typescript"
+          - "nyc"
+          - "@istanbuljs/nyc-config-typescript"
+          - "*mocha*"
