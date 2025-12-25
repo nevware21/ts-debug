@@ -10,7 +10,7 @@ import {
     DbgLevel, eDbgLevel, getDbgLevelName,
     IDbgProvider, IDbgLogCtx
 } from "@nevware21/ts-debug";
-import { asString, encodeAsJson, getInst, isFunction, isUndefined } from "@nevware21/ts-utils";
+import { asString, encodeAsJson, fnApply, getInst, isFunction, isUndefined } from "@nevware21/ts-utils";
 import { IDbgProviderConfig } from "../interfaces/IDbgProviderConfig";
 import { _chkLevel } from "../internal/checkLevel";
 import { _formatName } from "../internal/format";
@@ -21,7 +21,7 @@ import { noOpFunc } from "../internal/noOp";
  * @ignore
  * Provides a lookup map for the logging levels to the console function
  */
-const _levelFuncMap: Array<{ l: eDbgLevel, f: string, b?: string }> = [
+const _levelFuncMap: Array<{ l: eDbgLevel, f: keyof Console, b?: keyof Console }> = [
     { l: eDbgLevel.Error, f: "error" },
     { l: eDbgLevel.Warning, f: "warn" },
     { l: eDbgLevel.Information, f: "info" },
@@ -50,7 +50,7 @@ const _levelFuncMap: Array<{ l: eDbgLevel, f: string, b?: string }> = [
  * ```
  */
 export function createConsoleProvider(config?: IDbgProviderConfig): IDbgProvider {
-    let funcMap: { [key: number]: string } = {};
+    let funcMap: { [key: number]: keyof Console } = {};
     let cfg = config || {} as IDbgProviderConfig;
     let maxLevel = isUndefined(cfg.lvl) ? DbgLevel.Error : cfg.lvl;
 
@@ -85,10 +85,10 @@ export function createConsoleProvider(config?: IDbgProviderConfig): IDbgProvider
                 });
             }
             
-            console[func] && console[func](
-                _formatName(ctx, true) + getDbgLevelName(level) + ":" + asString(message),
+            let args = [ _formatName(ctx, true) + getDbgLevelName(level) + ":" + asString(message),
                 data && encodeAsJson(data),
-                usr && encodeAsJson(usr));
+                usr && encodeAsJson(usr)];
+            console[func] && fnApply(console[func] as any, console, args);
         }
     }
 

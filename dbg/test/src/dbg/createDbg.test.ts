@@ -7,7 +7,7 @@
  */
 
 import { objKeys, encodeAsJson } from "@nevware21/ts-utils";
-import { assert } from "chai";
+import { assert } from "@nevware21/tripwire";
 import { IDbg } from "../../../src/interfaces/IDbg";
 import { IDbgProvider } from "../../../src/interfaces/provider/IDbgProvider";
 import { IDbgLogCtx } from "../../../src/interfaces/log/IDbgLogCtx";
@@ -73,7 +73,7 @@ describe("createDbg", () => {
         });
     
         it("Check log with addProvider", () => {
-            let results = {};
+            let results: any = {};
             let dbg = createDbg();
             let ctx = dbg.addProvider({
                 log: (ctx: IDbgLogCtx, message: string, data?: any) => {
@@ -116,7 +116,7 @@ describe("createDbg", () => {
         });
     
         it("Check log with addProvider", () => {
-            let results = {};
+            let results: any = {};
             let dbg = createDbg();
             
             let ctx = dbg.addProvider({
@@ -178,7 +178,7 @@ describe("createDbg", () => {
         });
     
         it("Check log with provider", () => {
-            let results = {};
+            let results: any = {};
             let dbg = createDbg();
             
             let provider: IDbgProvider = {
@@ -379,7 +379,7 @@ describe("createDbg", () => {
         });
 
         it("Check log with provider and parent", () => {
-            let results = {};
+            let results: any = {};
             let parent = createDbg();
             let dbg = parent.create();
             
@@ -458,7 +458,7 @@ describe("createDbg", () => {
         });
 
         it("Check log with addProvider", () => {
-            let results = {};
+            let results: any = {};
             let dbg = createDbg({ lvl: eDbgLevel.Error });
             let ctx = dbg.addProvider({
                 log: (ctx: IDbgLogCtx, message: string, data?: any) => {
@@ -495,7 +495,7 @@ describe("createDbg", () => {
         });
     
         it("Check log with addProvider", () => {
-            let results = {};
+            let results: any = {};
             let dbg = createDbg({ lvl: eDbgLevel.Error });
             
             let ctx = dbg.addProvider({
@@ -552,7 +552,7 @@ describe("createDbg", () => {
         });
     
         it("Check log with provider", () => {
-            let results = {};
+            let results: any = {};
             let dbg = createDbg({ lvl: eDbgLevel.Error });
             
             let provider: IDbgProvider = {

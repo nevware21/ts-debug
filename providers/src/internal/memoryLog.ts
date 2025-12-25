@@ -20,7 +20,7 @@ export const _createMemoryLog = (ctx: IDbgLogCtx, message: string, data?: any) =
         message: { v: message, w: false },
         data: { v: data, w: false },
         usr: { l: getLazy(() => {
-            let values = {};
+            let values: any = {};
             usrCtx && usrCtx.each((name, value) => {
                 values[name] = value;
             });

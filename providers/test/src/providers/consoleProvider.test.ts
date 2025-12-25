@@ -6,7 +6,7 @@
  * Licensed under the MIT license.
  */
 
-import { assert } from "chai";
+import { assert } from "@nevware21/tripwire";
 import { createDbg, eDbgLevel } from "@nevware21/ts-debug";
 import { encodeAsJson, isFunction } from "@nevware21/ts-utils";
 import { createConsoleProvider } from "../../../src/providers/consoleProvider";
@@ -1300,7 +1300,7 @@ describe("consoleProvider", () => {
     it("Check all functions", () => {
         let orgConsole = console;
         try {
-            let results = { };
+            let results: any = { };
 
             // eslint-disable-next-line no-global-assign
             console = {
@@ -1421,7 +1421,7 @@ describe("consoleProvider", () => {
     it("Check missing functions", () => {
         let orgConsole = console;
         try {
-            let results = { };
+            let results: any = { };
 
             // eslint-disable-next-line no-global-assign
             console = {
@@ -1527,7 +1527,7 @@ describe("consoleProvider", () => {
     it("Check missing functions and no log", () => {
         let orgConsole = console;
         try {
-            let results = { };
+            let results: any = { };
 
             // eslint-disable-next-line no-global-assign
             console = {

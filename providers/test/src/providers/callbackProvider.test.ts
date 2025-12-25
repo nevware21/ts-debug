@@ -6,7 +6,7 @@
  * Licensed under the MIT license.
  */
 
-import { assert } from "chai";
+import { assert } from "@nevware21/tripwire";
 import { createDbg, DbgLevel, eDbgLevel } from "@nevware21/ts-debug";
 import { isFunction } from "@nevware21/ts-utils";
 import { EMPTY } from "../../../src/internal/constants";

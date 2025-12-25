@@ -6,7 +6,7 @@
  * Licensed under the MIT license.
  */
 
-import { assert } from "chai";
+import { assert } from "@nevware21/tripwire";
 import { _createUsrCtx } from "../../../src/internal/usrCtx";
 import { _parseCmdLine } from "../../../src/internal/parseCmdLine";
 
