@@ -1,6 +1,6 @@
 name: Sync Rush.json Version
 on:
-  pull_request_target:
+  pull_request:
     types: [opened, synchronize]
     paths:
       - "**/package.json"
