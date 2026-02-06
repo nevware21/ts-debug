@@ -39,7 +39,7 @@
         "karma-typescript": "^5.5.3",
         "mocha": "^10.0.0",
         "nyc": "^17.0.0",
-        "puppeteer": "24.37.1",
+        "puppeteer": "24.37.2",
         "rollup": "^4.54.0",
         "rollup-plugin-cleanup": "^3.2.1",
         "rollup-plugin-istanbul": "^5.0.0",
@@ -648,9 +648,9 @@
       }
     },
     "node_modules/@puppeteer/browsers/node_modules/semver": {
-      "version": "7.7.3",
-      "resolved": "https://registry.npmjs.org/semver/-/semver-7.7.3.tgz",
-      "integrity": "sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q==",
+      "version": "7.7.4",
+      "resolved": "https://registry.npmjs.org/semver/-/semver-7.7.4.tgz",
+      "integrity": "sha512-vFKC2IEtQnVhpT78h1Yp8wzwrf8CM+MzKMHGJZfBtzhZNycRFnXsHk6E5TxIkkMsgNS7mdX3AGB7x2QM2di4lA==",
       "bin": {
         "semver": "bin/semver.js"
       },
@@ -1120,7 +1120,7 @@
     "node_modules/@rush-temp/ts-debug": {
       "version": "0.0.0",
       "resolved": "file:projects/ts-debug.tgz",
-      "integrity": "sha512-mJK/us54Aqpjs1WKSJF3fQbvL5mmYS/86JtWVC4Y3ClYe/Nbq2SK10i0r1EbSDjbOkuMH0T8I0a5V0K8Cg8wWw==",
+      "integrity": "sha512-GPaoddBmuJgzdlZfmWeAXrxa9GIspZNkM4Z8ytECtbQamGQHWfSgwcJTLbTo5YgZkuecGZ7BVIT5c6Ah9ToX5Q==",
       "dependencies": {
         "@istanbuljs/nyc-config-typescript": "^1.0.2",
         "@microsoft/api-extractor": "^7.34.4",
@@ -1151,7 +1151,7 @@
         "karma-typescript": "^5.5.3",
         "mocha": "^10.0.0",
         "nyc": "^17.0.0",
-        "puppeteer": "24.37.1",
+        "puppeteer": "24.37.2",
         "rollup": "^4.54.0",
         "rollup-plugin-cleanup": "^3.2.1",
         "rollup-plugin-istanbul": "^5.0.0",
@@ -1167,7 +1167,7 @@
     "node_modules/@rush-temp/ts-debug-providers": {
       "version": "0.0.0",
       "resolved": "file:projects/ts-debug-providers.tgz",
-      "integrity": "sha512-JQzcg4jEXUxXx4KDqkjQC1ePto6v0oSchw9UhwKYS/EBq0FQdV7FN7KqMB3y49e4KFjtq6GBQBsgboGH/e+u6Q==",
+      "integrity": "sha512-Jr4IFJ7gsGdYNva3nQY5yrh+UNhfdiJDmULOlKftF1dR0kIvqobjV6cqLpKn4qsEtYAjVjycUCS/m/3QIH/ITQ==",
       "dependencies": {
         "@istanbuljs/nyc-config-typescript": "^1.0.2",
         "@microsoft/api-extractor": "^7.34.4",
@@ -1198,7 +1198,7 @@
         "karma-typescript": "^5.5.3",
         "mocha": "^10.0.0",
         "nyc": "^17.0.0",
-        "puppeteer": "24.37.1",
+        "puppeteer": "24.37.2",
         "rollup": "^4.54.0",
         "rollup-plugin-cleanup": "^3.2.1",
         "rollup-plugin-istanbul": "^5.0.0",
@@ -2333,9 +2333,9 @@
       }
     },
     "node_modules/caniuse-lite": {
-      "version": "1.0.30001768",
-      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001768.tgz",
-      "integrity": "sha512-qY3aDRZC5nWPgHUgIB84WL+nySuo19wk0VJpp/XI9T34lrvkyhRvNVOFJOp2kxClQhiFBu+TaUSudf6oa3vkSA==",
+      "version": "1.0.30001769",
+      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001769.tgz",
+      "integrity": "sha512-BCfFL1sHijQlBGWBMuJyhZUhzo7wer5sVj9hqekB/7xn0Ypy+pER/edCYQm4exbXj4WiySGp40P8UuTh6w1srg==",
       "funding": [
         {
           "type": "opencollective",
@@ -6978,16 +6978,16 @@
       }
     },
     "node_modules/puppeteer": {
-      "version": "24.37.1",
-      "resolved": "https://registry.npmjs.org/puppeteer/-/puppeteer-24.37.1.tgz",
-      "integrity": "sha512-iugAcwjRIX6XsMS1dzWbjKKUcEE0ZmmRbV0T6RyTtXNSHyBdss0r9GYJ9eOjUZfOoWeKCIOAptogdHYoBbJDeA==",
+      "version": "24.37.2",
+      "resolved": "https://registry.npmjs.org/puppeteer/-/puppeteer-24.37.2.tgz",
+      "integrity": "sha512-FV1W/919ve0y0oiS/3Rp5XY4MUNUokpZOH/5M4MMDfrrvh6T9VbdKvAHrAFHBuCxvluDxhjra20W7Iz6HJUcIQ==",
       "hasInstallScript": true,
       "dependencies": {
         "@puppeteer/browsers": "2.12.0",
         "chromium-bidi": "13.1.1",
         "cosmiconfig": "^9.0.0",
         "devtools-protocol": "0.0.1566079",
-        "puppeteer-core": "24.37.1",
+        "puppeteer-core": "24.37.2",
         "typed-query-selector": "^2.12.0"
       },
       "bin": {
@@ -6998,9 +6998,9 @@
       }
     },
     "node_modules/puppeteer-core": {
-      "version": "24.37.1",
-      "resolved": "https://registry.npmjs.org/puppeteer-core/-/puppeteer-core-24.37.1.tgz",
-      "integrity": "sha512-ylRJReaA6kd/CrahdrxxnSZf5S2hf1QR0S39QeoS55fuBoOl4UggGPW94zheu9lmCokpRQpa7q8r98xYyiQl0Q==",
+      "version": "24.37.2",
+      "resolved": "https://registry.npmjs.org/puppeteer-core/-/puppeteer-core-24.37.2.tgz",
+      "integrity": "sha512-nN8qwE3TGF2vA/+xemPxbesntTuqD9vCGOiZL2uh8HES3pPzLX20MyQjB42dH2rhQ3W3TljZ4ZaKZ0yX/abQuw==",
       "dependencies": {
         "@puppeteer/browsers": "2.12.0",
         "chromium-bidi": "13.1.1",
