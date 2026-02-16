@@ -47,7 +47,7 @@
         "sinon": "^15.0.0",
         "ts-mocha": "^10.0.0",
         "typedoc": "^0.28.15",
-        "typedoc-github-theme": "^0.3.0",
+        "typedoc-github-theme": "^0.4.0",
         "typescript": "~5.2.2",
         "uglify-js": "^3.15.5"
       }
@@ -1120,7 +1120,7 @@
     "node_modules/@rush-temp/ts-debug": {
       "version": "0.0.0",
       "resolved": "file:projects/ts-debug.tgz",
-      "integrity": "sha512-yLbwQ4zjA33a6dlwtUz1yjf7kx9FVvVn6gdu0RDJJCNPCZOxLSA2VKWu24WBy2Jj3lUaPKGldlNky722joPvzA==",
+      "integrity": "sha512-HL5rh3BYzY01VKQRSA4CP+qDk4xZ5UEXv5RF3ewr1IzIoBl7gyS12zjt300bOXYb6qsF1XK5O0j7dqOcF/q0yA==",
       "dependencies": {
         "@istanbuljs/nyc-config-typescript": "^1.0.2",
         "@microsoft/api-extractor": "^7.34.4",
@@ -1159,7 +1159,7 @@
         "sinon": "^15.0.0",
         "ts-mocha": "^10.0.0",
         "typedoc": "^0.28.15",
-        "typedoc-github-theme": "^0.3.0",
+        "typedoc-github-theme": "^0.4.0",
         "typescript": "~5.2.2",
         "uglify-js": "^3.15.5"
       }
@@ -1167,7 +1167,7 @@
     "node_modules/@rush-temp/ts-debug-providers": {
       "version": "0.0.0",
       "resolved": "file:projects/ts-debug-providers.tgz",
-      "integrity": "sha512-MC73yxxwJUnXw6TuosU3z2wGPKWYH+cXaMpjA573Yr6tKZOc0/Xjpib4UkpL074gCRzaT1PTpTfjIrlDauXk6Q==",
+      "integrity": "sha512-fzhDztr9TXBprObZ1LseBvpKwVg5sICU3VLcWcFiPVZ08wKvy/izKC7xQCHTsWnugNPkabW6bggKOPugaPWXgQ==",
       "dependencies": {
         "@istanbuljs/nyc-config-typescript": "^1.0.2",
         "@microsoft/api-extractor": "^7.34.4",
@@ -1206,7 +1206,7 @@
         "sinon": "^15.0.0",
         "ts-mocha": "^10.0.0",
         "typedoc": "^0.28.15",
-        "typedoc-github-theme": "^0.3.0",
+        "typedoc-github-theme": "^0.4.0",
         "typescript": "~5.2.2",
         "uglify-js": "^3.15.5"
       }
@@ -8245,9 +8245,9 @@
       }
     },
     "node_modules/text-decoder": {
-      "version": "1.2.6",
-      "resolved": "https://registry.npmjs.org/text-decoder/-/text-decoder-1.2.6.tgz",
-      "integrity": "sha512-27FeW5GQFDfw0FpwMQhMagB7BztOOlmjcSRi97t2oplhKVTZtp0DZbSegSaXS5IIC6mxMvBG4AR1Sgc6BX3CQg==",
+      "version": "1.2.7",
+      "resolved": "https://registry.npmjs.org/text-decoder/-/text-decoder-1.2.7.tgz",
+      "integrity": "sha512-vlLytXkeP4xvEq2otHeJfSQIRyWxo/oZGEbXrtEEF9Hnmrdly59sUbzZ/QgyWuLYHctCHxFF4tRQZNQ9k60ExQ==",
       "dependencies": {
         "b4a": "^1.6.4"
       }
@@ -8518,9 +8518,9 @@
       }
     },
     "node_modules/typedoc-github-theme": {
-      "version": "0.3.1",
-      "resolved": "https://registry.npmjs.org/typedoc-github-theme/-/typedoc-github-theme-0.3.1.tgz",
-      "integrity": "sha512-j6PmkAGmf/MGCzYjQcUH6jS9djPsNl/IoTXooxC+MoeMkBhbmPyKJlpR6Lw12BLoe2OYpYA2J1KMktUJXp/8Sw==",
+      "version": "0.4.0",
+      "resolved": "https://registry.npmjs.org/typedoc-github-theme/-/typedoc-github-theme-0.4.0.tgz",
+      "integrity": "sha512-lo/hr4EFZxq0SsMGeAscKUzljIKFgrJf5fb4nOAJcqaiSShQv7kzwF6M1s2fVRvUyx6UsmD4zEb+MtKkbucYpg==",
       "engines": {
         "node": ">=18.0.0"
       },
