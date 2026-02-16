@@ -11,7 +11,7 @@
         "@istanbuljs/nyc-config-typescript": "^1.0.2",
         "@microsoft/api-extractor": "^7.34.4",
         "@nevware21/coverage-tools": "^0.1.3",
-        "@nevware21/tripwire": ">= 0.1.2 < 2.x",
+        "@nevware21/tripwire": ">= 0.1.7 < 2.x",
         "@nevware21/ts-utils": ">= 0.9.4 < 2.x",
         "@rollup/plugin-commonjs": "^29.0.0",
         "@rollup/plugin-json": "^6.0.0",
@@ -1120,12 +1120,12 @@
     "node_modules/@rush-temp/ts-debug": {
       "version": "0.0.0",
       "resolved": "file:projects/ts-debug.tgz",
-      "integrity": "sha512-GPaoddBmuJgzdlZfmWeAXrxa9GIspZNkM4Z8ytECtbQamGQHWfSgwcJTLbTo5YgZkuecGZ7BVIT5c6Ah9ToX5Q==",
+      "integrity": "sha512-yLbwQ4zjA33a6dlwtUz1yjf7kx9FVvVn6gdu0RDJJCNPCZOxLSA2VKWu24WBy2Jj3lUaPKGldlNky722joPvzA==",
       "dependencies": {
         "@istanbuljs/nyc-config-typescript": "^1.0.2",
         "@microsoft/api-extractor": "^7.34.4",
         "@nevware21/coverage-tools": "^0.1.3",
-        "@nevware21/tripwire": ">= 0.1.2 < 2.x",
+        "@nevware21/tripwire": ">= 0.1.7 < 2.x",
         "@nevware21/ts-utils": ">= 0.9.4 < 2.x",
         "@rollup/plugin-commonjs": "^29.0.0",
         "@rollup/plugin-json": "^6.0.0",
@@ -1167,12 +1167,12 @@
     "node_modules/@rush-temp/ts-debug-providers": {
       "version": "0.0.0",
       "resolved": "file:projects/ts-debug-providers.tgz",
-      "integrity": "sha512-Jr4IFJ7gsGdYNva3nQY5yrh+UNhfdiJDmULOlKftF1dR0kIvqobjV6cqLpKn4qsEtYAjVjycUCS/m/3QIH/ITQ==",
+      "integrity": "sha512-MC73yxxwJUnXw6TuosU3z2wGPKWYH+cXaMpjA573Yr6tKZOc0/Xjpib4UkpL074gCRzaT1PTpTfjIrlDauXk6Q==",
       "dependencies": {
         "@istanbuljs/nyc-config-typescript": "^1.0.2",
         "@microsoft/api-extractor": "^7.34.4",
         "@nevware21/coverage-tools": "^0.1.3",
-        "@nevware21/tripwire": ">= 0.1.2 < 2.x",
+        "@nevware21/tripwire": ">= 0.1.7 < 2.x",
         "@nevware21/ts-utils": ">= 0.9.4 < 2.x",
         "@rollup/plugin-commonjs": "^29.0.0",
         "@rollup/plugin-json": "^6.0.0",
@@ -2333,9 +2333,9 @@
       }
     },
     "node_modules/caniuse-lite": {
-      "version": "1.0.30001769",
-      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001769.tgz",
-      "integrity": "sha512-BCfFL1sHijQlBGWBMuJyhZUhzo7wer5sVj9hqekB/7xn0Ypy+pER/edCYQm4exbXj4WiySGp40P8UuTh6w1srg==",
+      "version": "1.0.30001770",
+      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001770.tgz",
+      "integrity": "sha512-x/2CLQ1jHENRbHg5PSId2sXq1CIO1CISvwWAj027ltMVG2UNgW+w9oH2+HzgEIRFembL8bUlXtfbBHR1fCg2xw==",
       "funding": [
         {
           "type": "opencollective",
@@ -8245,9 +8245,9 @@
       }
     },
     "node_modules/text-decoder": {
-      "version": "1.2.4",
-      "resolved": "https://registry.npmjs.org/text-decoder/-/text-decoder-1.2.4.tgz",
-      "integrity": "sha512-mzlffA3tBNhziEHPK5L5InZg1d/ElNIpJhnhbDRNUtem/edZcJ5zg5FgwKKKOyklxk+6Jt+TrSu83musmvrDlg==",
+      "version": "1.2.6",
+      "resolved": "https://registry.npmjs.org/text-decoder/-/text-decoder-1.2.6.tgz",
+      "integrity": "sha512-27FeW5GQFDfw0FpwMQhMagB7BztOOlmjcSRi97t2oplhKVTZtp0DZbSegSaXS5IIC6mxMvBG4AR1Sgc6BX3CQg==",
       "dependencies": {
         "b4a": "^1.6.4"
       }
@@ -8496,9 +8496,9 @@
       }
     },
     "node_modules/typedoc": {
-      "version": "0.28.16",
-      "resolved": "https://registry.npmjs.org/typedoc/-/typedoc-0.28.16.tgz",
-      "integrity": "sha512-x4xW77QC3i5DUFMBp0qjukOTnr/sSg+oEs86nB3LjDslvAmwe/PUGDWbe3GrIqt59oTqoXK5GRK9tAa0sYMiog==",
+      "version": "0.28.17",
+      "resolved": "https://registry.npmjs.org/typedoc/-/typedoc-0.28.17.tgz",
+      "integrity": "sha512-ZkJ2G7mZrbxrKxinTQMjFqsCoYY6a5Luwv2GKbTnBCEgV2ihYm5CflA9JnJAwH0pZWavqfYxmDkFHPt4yx2oDQ==",
       "dependencies": {
         "@gerrit0/mini-shiki": "^3.17.0",
         "lunr": "^2.3.9",
