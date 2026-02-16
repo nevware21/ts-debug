@@ -47,7 +47,7 @@
         "sinon": "^15.0.0",
         "ts-mocha": "^10.0.0",
         "typedoc": "^0.28.15",
-        "typedoc-github-theme": "^0.3.0",
+        "typedoc-github-theme": "^0.4.0",
         "typescript": "~5.2.2",
         "uglify-js": "^3.15.5"
       }
@@ -1120,7 +1120,7 @@
     "node_modules/@rush-temp/ts-debug": {
       "version": "0.0.0",
       "resolved": "file:projects/ts-debug.tgz",
-      "integrity": "sha512-uU0KLKcB8E5NhRgyXzoCoSOw30eyit+m3OQLEz5NC1n8/sE/+dMd2igdSyaBfXllyFBHMIBeTRbrdhi9YKMhgA==",
+      "integrity": "sha512-9jNQrZ/J3ykohfyUIyer1VGUuMIoNPBBZQ8L9aunJnpbjZNYyoDQ3pqWhNo1iVMNDXk56m+hWtX+jZVF9xgkDw==",
       "dependencies": {
         "@istanbuljs/nyc-config-typescript": "^1.0.2",
         "@microsoft/api-extractor": "^7.34.4",
@@ -1159,7 +1159,7 @@
         "sinon": "^15.0.0",
         "ts-mocha": "^10.0.0",
         "typedoc": "^0.28.15",
-        "typedoc-github-theme": "^0.3.0",
+        "typedoc-github-theme": "^0.4.0",
         "typescript": "~5.2.2",
         "uglify-js": "^3.15.5"
       }
@@ -1167,7 +1167,7 @@
     "node_modules/@rush-temp/ts-debug-providers": {
       "version": "0.0.0",
       "resolved": "file:projects/ts-debug-providers.tgz",
-      "integrity": "sha512-EbM2BjS8/qK/9KJgybxSU0l7DlBji4hUDI8ZOr9YfRK7QgPoJQ5S59LIrAXPe/yjsSWtObrDE7hAOwmJlf2OHA==",
+      "integrity": "sha512-hsIlCz2fO8PMo47k/EXBo6xp2MIi3r8gPd3qRnStBnFfZaE/A0L+6zAg9RrTSwZ/q+zvnEGCdtRGThCPaybsVQ==",
       "dependencies": {
         "@istanbuljs/nyc-config-typescript": "^1.0.2",
         "@microsoft/api-extractor": "^7.34.4",
@@ -1206,7 +1206,7 @@
         "sinon": "^15.0.0",
         "ts-mocha": "^10.0.0",
         "typedoc": "^0.28.15",
-        "typedoc-github-theme": "^0.3.0",
+        "typedoc-github-theme": "^0.4.0",
         "typescript": "~5.2.2",
         "uglify-js": "^3.15.5"
       }
@@ -8518,9 +8518,9 @@
       }
     },
     "node_modules/typedoc-github-theme": {
-      "version": "0.3.1",
-      "resolved": "https://registry.npmjs.org/typedoc-github-theme/-/typedoc-github-theme-0.3.1.tgz",
-      "integrity": "sha512-j6PmkAGmf/MGCzYjQcUH6jS9djPsNl/IoTXooxC+MoeMkBhbmPyKJlpR6Lw12BLoe2OYpYA2J1KMktUJXp/8Sw==",
+      "version": "0.4.0",
+      "resolved": "https://registry.npmjs.org/typedoc-github-theme/-/typedoc-github-theme-0.4.0.tgz",
+      "integrity": "sha512-lo/hr4EFZxq0SsMGeAscKUzljIKFgrJf5fb4nOAJcqaiSShQv7kzwF6M1s2fVRvUyx6UsmD4zEb+MtKkbucYpg==",
       "engines": {
         "node": ">=18.0.0"
       },
