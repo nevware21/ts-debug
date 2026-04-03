@@ -60,7 +60,7 @@
         "@nevware21/ts-debug": "0.1.0"
     },
     "peerDependencies": {
-        "typescript": ">=1"
+        "typescript": "~5.5.4"
     },
     "devDependencies": {
         "@microsoft/api-extractor": "^7.34.4",
@@ -99,11 +99,12 @@
         "ts-mocha": "^10.0.0",
         "typedoc": "^0.28.15",
         "typedoc-github-theme": "^0.4.0",
-        "typescript": "~5.2.2",
+        "typescript": "~5.5.4",
         "uglify-js": "^3.15.5",
         "copyfiles": "^2.4.1"
     }
 }
+
 
 
 
