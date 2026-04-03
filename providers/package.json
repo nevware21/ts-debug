@@ -60,7 +60,7 @@
         "@nevware21/ts-debug": "0.1.0"
     },
     "peerDependencies": {
-        "typescript": ">=1"
+        "typescript": "~5.5.4"
     },
     "devDependencies": {
         "@microsoft/api-extractor": "^7.34.4",
@@ -104,6 +104,7 @@
         "copyfiles": "^2.4.1"
     }
 }
+
 
 
 
