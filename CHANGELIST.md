@@ -4,4 +4,4 @@
 ## Changelog
 
 - #1 Initial Implementation
-- #2 **Breaking (CI/Tooling):** Dropped Node.js 16 from the CI matrix; CI now runs on Node.js 18, 20, and 22.
+- #2 **Breaking (CI/Tooling):** Dropped Node.js 16 from the CI matrix; CI now runs on Node.js 18, 20, 22, and 24.
