@@ -39,7 +39,7 @@
         "karma-typescript": "^5.5.3",
         "mocha": "^10.0.0",
         "nyc": "^18.0.0",
-        "puppeteer": "24.40.0",
+        "puppeteer": "24.41.0",
         "rollup": "^4.54.0",
         "rollup-plugin-cleanup": "^3.2.1",
         "rollup-plugin-istanbul": "^5.0.0",
@@ -1088,7 +1088,7 @@
     "node_modules/@rush-temp/ts-debug": {
       "version": "0.0.0",
       "resolved": "file:projects/ts-debug.tgz",
-      "integrity": "sha512-lUqkE0NKwsB7qE7kRsCv9OmZofeKThrgJBdgLvajYiBbHLfFHyUZW3IIA84KG/LKoHqHxZL+9fTJB5G5iOHioA==",
+      "integrity": "sha512-TMvQO2vGdiqYtuzdA1iZu+b35OWGZXWLCKgYv/HOY/QngrDn123ZbyzVcPd8XnD4R1CTzH6CmTqWAwm4QKeUZw==",
       "dependencies": {
         "@istanbuljs/nyc-config-typescript": "^1.0.2",
         "@microsoft/api-extractor": "^7.34.4",
@@ -1119,7 +1119,7 @@
         "karma-typescript": "^5.5.3",
         "mocha": "^10.0.0",
         "nyc": "^18.0.0",
-        "puppeteer": "24.40.0",
+        "puppeteer": "24.41.0",
         "rollup": "^4.54.0",
         "rollup-plugin-cleanup": "^3.2.1",
         "rollup-plugin-istanbul": "^5.0.0",
@@ -1135,7 +1135,7 @@
     "node_modules/@rush-temp/ts-debug-providers": {
       "version": "0.0.0",
       "resolved": "file:projects/ts-debug-providers.tgz",
-      "integrity": "sha512-5NUfGNAxo6wBkose7lY6QMNbZ4Ft7OnEXxEPX+M+KOacVgnVbOPp/sX3/uxKEx/eVOGeEHS9DhtR5sB39/5uDQ==",
+      "integrity": "sha512-pL/DA74XuG06FbE2t1Asqtjji9V9eqm8CwxB8Xhz+QGk3N06m8YEE6AnY+EsD0XqMGbdMG9gc1DsRYSnTjKP1g==",
       "dependencies": {
         "@istanbuljs/nyc-config-typescript": "^1.0.2",
         "@microsoft/api-extractor": "^7.34.4",
@@ -1166,7 +1166,7 @@
         "karma-typescript": "^5.5.3",
         "mocha": "^10.0.0",
         "nyc": "^18.0.0",
-        "puppeteer": "24.40.0",
+        "puppeteer": "24.41.0",
         "rollup": "^4.54.0",
         "rollup-plugin-cleanup": "^3.2.1",
         "rollup-plugin-istanbul": "^5.0.0",
@@ -3009,9 +3009,9 @@
       }
     },
     "node_modules/devtools-protocol": {
-      "version": "0.0.1581282",
-      "resolved": "https://registry.npmjs.org/devtools-protocol/-/devtools-protocol-0.0.1581282.tgz",
-      "integrity": "sha512-nv7iKtNZQshSW2hKzYNr46nM/Cfh5SEvE2oV0/SEGgc9XupIY5ggf84Cz8eJIkBce7S3bmTAauFD6aysMpnqsQ=="
+      "version": "0.0.1595872",
+      "resolved": "https://registry.npmjs.org/devtools-protocol/-/devtools-protocol-0.0.1595872.tgz",
+      "integrity": "sha512-kRfgp8vWVjBu/fbYCiVFiOqsCk3CrMKEo3WbgGT2NXK2dG7vawWPBljixajVgGK9II8rDO9G0oD0zLt3I1daRg=="
     },
     "node_modules/di": {
       "version": "0.0.1",
@@ -7106,16 +7106,16 @@
       }
     },
     "node_modules/puppeteer": {
-      "version": "24.40.0",
-      "resolved": "https://registry.npmjs.org/puppeteer/-/puppeteer-24.40.0.tgz",
-      "integrity": "sha512-IxQbDq93XHVVLWHrAkFP7F7iHvb9o0mgfsSIMlhHb+JM+JjM1V4v4MNSQfcRWJopx9dsNOr9adYv0U5fm9BJBQ==",
+      "version": "24.41.0",
+      "resolved": "https://registry.npmjs.org/puppeteer/-/puppeteer-24.41.0.tgz",
+      "integrity": "sha512-W6Fk0J3TPjjtwjXOyR/qf+YaL0H/Uq8HIgHcXG4mNM/IgbKMCH/HPyK0Fi2qbTU/QpSl9bCte2yBpGHKejTpIw==",
       "hasInstallScript": true,
       "dependencies": {
         "@puppeteer/browsers": "2.13.0",
         "chromium-bidi": "14.0.0",
         "cosmiconfig": "^9.0.0",
-        "devtools-protocol": "0.0.1581282",
-        "puppeteer-core": "24.40.0",
+        "devtools-protocol": "0.0.1595872",
+        "puppeteer-core": "24.41.0",
         "typed-query-selector": "^2.12.1"
       },
       "bin": {
@@ -7126,14 +7126,14 @@
       }
     },
     "node_modules/puppeteer-core": {
-      "version": "24.40.0",
-      "resolved": "https://registry.npmjs.org/puppeteer-core/-/puppeteer-core-24.40.0.tgz",
-      "integrity": "sha512-MWL3XbUCfVgGR0gRsidzT6oKJT2QydPLhMITU6HoVWiiv4gkb6gJi3pcdAa8q4HwjBTbqISOWVP4aJiiyUJvag==",
+      "version": "24.41.0",
+      "resolved": "https://registry.npmjs.org/puppeteer-core/-/puppeteer-core-24.41.0.tgz",
+      "integrity": "sha512-rLIUri7E/NQ3APSEYCCozaSJx0u8Tu9wxO6BJwnvXmIgILSK3L0TombaVh3izp1njAGrO6H2ru0hcIrLF+gWLw==",
       "dependencies": {
         "@puppeteer/browsers": "2.13.0",
         "chromium-bidi": "14.0.0",
         "debug": "^4.4.3",
-        "devtools-protocol": "0.0.1581282",
+        "devtools-protocol": "0.0.1595872",
         "typed-query-selector": "^2.12.1",
         "webdriver-bidi-protocol": "0.4.1",
         "ws": "^8.19.0"
