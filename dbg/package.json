@@ -26,6 +26,16 @@
     "bugs": {
         "url": "https://github.com/nevware21/ts-debug/issues"
     },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/nevware21"
+        },
+        {
+            "type": "buymeacoffee",
+            "url": "https://buymeacoffee.com/nevware21"
+        }
+    ],
     "sideEffects": false,
     "licenses": [
         {
@@ -103,7 +113,6 @@
         "copyfiles": "^2.4.1"
     }
 }
-
 
 
 
