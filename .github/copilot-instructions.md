@@ -19,7 +19,7 @@ When preparing a release, always:
    - `dbg/package.json`
    - `providers/package.json`
    - Keep `providers/package.json` aligned with the new `@nevware21/ts-debug` dependency version.
-3. Update `README.md` so the recommended install version matches the new release.
+3. Update `README.md` for any release-related version references, but keep the Quickstart install command unpinned so it always installs the latest package version.
 4. Update `CHANGELIST.md`:
    - include only the significant changes for the new version
    - add a full changelist link when one is available

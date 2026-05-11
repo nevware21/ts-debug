@@ -34,7 +34,7 @@ See [Browser Support](#browser-support) for details on the supported browser env
 
 ## Quickstart
 
-Install the recommended npm package version: `npm install @nevware21/ts-debug@0.1.0 --save`
+Install the npm packare: `npm install @nevware21/ts-debug --save`
 
 And then just import the helpers and use them.
 
