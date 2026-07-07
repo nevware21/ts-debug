@@ -21,7 +21,7 @@
         "@rush-temp/ts-debug": "file:./projects/ts-debug.tgz",
         "@rush-temp/ts-debug-providers": "file:./projects/ts-debug-providers.tgz",
         "@types/mocha": "^10.0.1",
-        "@types/sinon": "^21.0.0",
+        "@types/sinon": "^22.0.0",
         "chromium": "^3.0.3",
         "codecov": "^3.8.3",
         "copyfiles": "^2.4.1",
@@ -1102,7 +1102,7 @@
     "node_modules/@rush-temp/ts-debug": {
       "version": "0.0.0",
       "resolved": "file:projects/ts-debug.tgz",
-      "integrity": "sha512-SozVxygyUIJ0R+YFH9mYwEdg1d4q32FTvaF4aZgW4Dxqu4eqjJUEZG0k8HYwz1PsdEeEuQUpj4zUdYGIhmAQ2A==",
+      "integrity": "sha512-KNRzIT7uQeAR7CUjEqowsC+dq6VgoqEm8eHsW+FYi3h9xE3XLxezy1z41SaqAIrzzF04LUTmv8aeSw3691NGUA==",
       "dependencies": {
         "@istanbuljs/nyc-config-typescript": "^1.0.2",
         "@microsoft/api-extractor": "^7.34.4",
@@ -1115,7 +1115,7 @@
         "@rollup/plugin-strip": "^3.0.2",
         "@rollup/plugin-typescript": "^12.3.0",
         "@types/mocha": "^10.0.1",
-        "@types/sinon": "^21.0.0",
+        "@types/sinon": "^22.0.0",
         "chromium": "^3.0.3",
         "codecov": "^3.8.3",
         "copyfiles": "^2.4.1",
@@ -1149,7 +1149,7 @@
     "node_modules/@rush-temp/ts-debug-providers": {
       "version": "0.0.0",
       "resolved": "file:projects/ts-debug-providers.tgz",
-      "integrity": "sha512-NdZEbV0thpWjbSL5dG1sAFu2M5h7m4Uf/+8rrzNoZRxBup70nGLvnRdQAF6tdmWgts7gkGVxiH+dIwONgCzZHA==",
+      "integrity": "sha512-9MqEoMrdwf+ySJ2Y+LFyneTXD+VTRrPkF4b9Hj8yne+47EHZRlxTdpmufIKs1sS22pk7cRwUjc66C7X47ydpNg==",
       "dependencies": {
         "@istanbuljs/nyc-config-typescript": "^1.0.2",
         "@microsoft/api-extractor": "^7.34.4",
@@ -1162,7 +1162,7 @@
         "@rollup/plugin-strip": "^3.0.2",
         "@rollup/plugin-typescript": "^12.3.0",
         "@types/mocha": "^10.0.1",
-        "@types/sinon": "^21.0.0",
+        "@types/sinon": "^22.0.0",
         "chromium": "^3.0.3",
         "codecov": "^3.8.3",
         "copyfiles": "^2.4.1",
@@ -1463,9 +1463,9 @@
       }
     },
     "node_modules/@types/sinon": {
-      "version": "21.0.1",
-      "resolved": "https://registry.npmjs.org/@types/sinon/-/sinon-21.0.1.tgz",
-      "integrity": "sha512-5yoJSqLbjH8T9V2bksgRayuhpZy+723/z6wBOR+Soe4ZlXC0eW8Na71TeaZPUWDQvM7LYKa9UGFc6LRqxiR5fQ==",
+      "version": "22.0.0",
+      "resolved": "https://registry.npmjs.org/@types/sinon/-/sinon-22.0.0.tgz",
+      "integrity": "sha512-TDbVpbccc2HfiqHR09Argj3mHV1KMW7sCCKj52fsl8lbRLkEn7fB1966EWhOKWUBcqfBueZuPoA7/OK1CKiy3g==",
       "dependencies": {
         "@types/sinonjs__fake-timers": "*"
       }
