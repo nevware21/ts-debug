@@ -102,7 +102,7 @@
         "puppeteer": "25.16.0",
         "rollup": "^4.54.0",
         "rollup-plugin-minify-es": "^1.1.1",
-        "rollup-plugin-istanbul": "^5.0.0",
+        "rollup-plugin-istanbul": "^6.0.0",
         "rollup-plugin-cleanup": "^3.2.1",
         "sinon": "^15.0.0",
         "ts-mocha": "^10.0.0",
